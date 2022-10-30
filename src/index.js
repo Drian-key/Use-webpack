@@ -1,3 +1,6 @@
+import css from "./style.scss";
+import * as bootstrap from "bootstrap";
+
 import { run } from "./app/app.js";
 import { AlertService } from "./app/alert.service.js";
 import { CalculatorService } from "./app/calculator.service.js";
