@@ -1,6 +1,6 @@
+require("./vendor");
 import css from "./style.scss";
-import * as bootstrap from "bootstrap";
-
+import _ from "lodash";
 import { run } from "./app/app.js";
 import { AlertService } from "./app/alert.service.js";
 import { CalculatorService } from "./app/calculator.service.js";
@@ -11,3 +11,5 @@ const calculatorService = new CalculatorService();
 const jokesService = new JokesService();
 
 run(alertService, calculatorService, jokesService);
+
+console.log(_.toUpper("hello from index"));
